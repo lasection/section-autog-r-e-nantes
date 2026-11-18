@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f4">
+  <meta name="description" content="Retrouvez les cours, supports et ressources archivés dans votre espace étudiant.">
+  <title>Archivage — L’Atelier étudiant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="index.html" aria-label="L’Atelier étudiant, accueil"><span class="brand-mark">a<span>.</span></span><span class="brand-name">l’atelier<span>étudiant</span></span></a>
+      <div class="side-label">ESPACE ÉTUDIANT</div>
+      <nav class="side-nav" aria-label="Navigation principale">
+        <a class="nav-link" href="index.html"><span class="nav-icon">▦</span>Emploi du temps</a>
+        <a class="nav-link active" href="archives.html" aria-current="page"><span class="nav-icon">▤</span>Archivage</a>
+      </nav>
+      <div class="sidebar-bottom"><div class="side-note-icon">✳</div><p>Tout retrouver,<br>sans chercher.</p><span>Vos cours, vos ressources, au même endroit.</span></div>
+      <div class="sidebar-footer">© 2025 L’Atelier étudiant</div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" type="button" aria-label="Ouvrir le menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <div class="breadcrumbs">Espace étudiant <span>/</span> <strong>Archivage</strong></div>
+        <div class="topbar-right"><span class="status-dot"></span><span>Votre espace</span><div class="avatar" aria-label="Profil étudiant">É</div></div>
+      </header>
+
+      <section class="page-heading archive-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> VOTRE BIBLIOTHÈQUE</div><h1>Les archives<span class="heading-period">.</span></h1><p class="page-subtitle">Les bons supports, au bon moment. Tout est ici.</p></div>
+        <div class="archive-count"><strong id="archive-count">6</strong><span>ressources<br>à explorer</span></div>
+      </section>
+
+      <section class="archive-panel" aria-label="Bibliothèque de ressources">
+        <div class="archive-toolbar">
+          <div class="filter-chips" role="group" aria-label="Filtrer par catégorie">
+            <button class="filter-chip selected" type="button" data-filter="all">Tout voir <span>6</span></button>
+            <button class="filter-chip" type="button" data-filter="cours">Cours</button>
+            <button class="filter-chip" type="button" data-filter="supports">Supports</button>
+            <button class="filter-chip" type="button" data-filter="infos">Infos pratiques</button>
+          </div>
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="archive-search" type="search" placeholder="Rechercher une ressource…" aria-label="Rechercher une ressource"></label>
+        </div>
+        <div class="archive-grid" id="archive-grid">
+          <article class="archive-card" data-category="cours" data-search="introduction au design cours semestre 1"><div class="file-top"><span class="file-type pdf">PDF</span><span class="file-mark">↗</span></div><div class="file-illustration illust-peach"><span class="doc-icon">▤</span></div><div class="file-info"><span class="file-category">COURS <i>•</i> SEMESTRE 1</span><h2>Introduction au design</h2><p>Les fondamentaux et premières notions.</p><div class="file-meta"><span>PDF · 2,4 Mo</span><span>12 sept. 2025</span></div><a class="download-link" href="#" aria-label="Télécharger Introduction au design">Consulter <span>↗</span></a></div></article>
+          <article class="archive-card" data-category="supports" data-search="méthodologie projet support fiche pratique"><div class="file-top"><span class="file-type doc">DOC</span><span class="file-mark">↗</span></div><div class="file-illustration illust-lilac"><span class="doc-icon">▧</span></div><div class="file-info"><span class="file-category">SUPPORT <i>•</i> MÉTHODE</span><h2>Méthodologie de projet</h2><p>Une fiche pratique pour avancer pas à pas.</p><div class="file-meta"><span>DOC · 860 Ko</span><span>08 sept. 2025</span></div><a class="download-link" href="#" aria-label="Télécharger Méthodologie de projet">Consulter <span>↗</span></a></div></article>
+          <article class="archive-card" data-category="cours" data-search="histoire des arts cours semestre 1"><div class="file-top"><span class="file-type pdf">PDF</span><span class="file-mark">↗</span></div><div class="file-illustration illust-blue"><span class="doc-icon">▤</span></div><div class="file-info"><span class="file-category">COURS <i>•</i> SEMESTRE 1</span><h2>Repères en histoire des arts</h2><p>Dates, mouvements et références essentielles.</p><div class="file-meta"><span>PDF · 3,1 Mo</span><span>02 sept. 2025</span></div><a class="download-link" href="#" aria-label="Télécharger Repères en histoire des arts">Consulter <span>↗</span></a></div></article>
+          <article class="archive-card" data-category="supports" data-search="grille évaluation projet support"><div class="file-top"><span class="file-type pdf">PDF</span><span class="file-mark">↗</span></div><div class="file-illustration illust-green"><span class="doc-icon">▦</span></div><div class="file-info"><span class="file-category">SUPPORT <i>•</i> PROJET</span><h2>Grille d’évaluation</h2><p>Les critères pour préparer votre rendu.</p><div class="file-meta"><span>PDF · 540 Ko</span><span>29 août 2025</span></div><a class="download-link" href="#" aria-label="Télécharger Grille d’évaluation">Consulter <span>↗</span></a></div></article>
+          <article class="archive-card" data-category="infos" data-search="guide rentrée informations pratiques établissement"><div class="file-top"><span class="file-type pdf">PDF</span><span class="file-mark">↗</span></div><div class="file-illustration illust-yellow"><span class="doc-icon">✳</span></div><div class="file-info"><span class="file-category">INFOS PRATIQUES</span><h2>Guide de rentrée</h2><p>Les repères utiles pour bien démarrer.</p><div class="file-meta"><span>PDF · 1,2 Mo</span><span>25 août 2025</span></div><a class="download-link" href="#" aria-label="Télécharger Guide de rentrée">Consulter <span>↗</span></a></div></article>
+          <article class="archive-card" data-category="infos" data-search="calendrier annuel dates vacances informations pratiques"><div class="file-top"><span class="file-type pdf">PDF</span><span class="file-mark">↗</span></div><div class="file-illustration illust-pink"><span class="doc-icon">▦</span></div><div class="file-info"><span class="file-category">INFOS PRATIQUES</span><h2>Calendrier de l’année</h2><p>Les dates importantes à garder en tête.</p><div class="file-meta"><span>PDF · 720 Ko</span><span>20 août 2025</span></div><a class="download-link" href="#" aria-label="Télécharger Calendrier de l’année">Consulter <span>↗</span></a></div></article>
+        </div>
+        <div class="empty-state" id="empty-state" hidden><span>⌕</span><h2>Aucun résultat</h2><p>Essayez un autre mot-clé ou une autre catégorie.</p></div>
+        <p class="sample-note archive-note">Ressources de démonstration — ajoutez vos propres documents et liens pour les rendre accessibles.</p>
+      </section>
+      <footer class="main-footer"><span>Fait pour vous aider à y voir plus clair.</span><a href="index.html">Retour à l’emploi du temps <span>→</span></a></footer>
+    </main>
+  </div>
+</body>
+</html>

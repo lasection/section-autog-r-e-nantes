@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f4">
+  <meta name="description" content="L’espace étudiant : consultez votre emploi du temps et retrouvez les documents archivés.">
+  <title>Accueil — L’Atelier étudiant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="index.html" aria-label="L’Atelier étudiant, accueil">
+        <span class="brand-mark">a<span>.</span></span>
+        <span class="brand-name">l’atelier<span>étudiant</span></span>
+      </a>
+      <div class="side-label">ESPACE ÉTUDIANT</div>
+      <nav class="side-nav" aria-label="Navigation principale">
+        <a class="nav-link active" href="index.html" aria-current="page"><span class="nav-icon">▦</span>Emploi du temps</a>
+        <a class="nav-link" href="archives.html"><span class="nav-icon">▤</span>Archivage</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-note-icon">✳</div>
+        <p>Un espace simple<br>pour s’organiser.</p>
+        <span>Vos cours, vos ressources, au même endroit.</span>
+      </div>
+      <div class="sidebar-footer">© 2025 L’Atelier étudiant</div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" type="button" aria-label="Ouvrir le menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <div class="breadcrumbs">Espace étudiant <span>/</span> <strong>Emploi du temps</strong></div>
+        <div class="topbar-right"><span class="status-dot"></span><span>Votre espace</span><div class="avatar" aria-label="Profil étudiant">É</div></div>
+      </header>
+
+      <section class="page-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> ON S’ORGANISE</div>
+          <h1>Emploi du temps<span class="heading-period">.</span></h1>
+          <p class="page-subtitle">Une vue claire de votre semaine, pour garder le bon rythme.</p>
+        </div>
+        <div class="heading-date"><span class="date-icon">◷</span><span id="today-label">Semaine en cours</span></div>
+      </section>
+
+      <section class="schedule-card" aria-labelledby="schedule-title">
+        <div class="schedule-toolbar">
+          <div>
+            <h2 id="schedule-title">Ma semaine</h2>
+            <p class="muted" id="week-range">Consultez les cours prévus cette semaine</p>
+          </div>
+          <div class="week-controls">
+            <button class="icon-button" type="button" id="previous-week" aria-label="Semaine précédente">←</button>
+            <button class="today-button" type="button" id="current-week">Aujourd’hui</button>
+            <button class="icon-button" type="button" id="next-week" aria-label="Semaine suivante">→</button>
+          </div>
+        </div>
+        <div class="day-tabs" role="tablist" aria-label="Jours de la semaine">
+          <button class="day-tab" type="button" data-day="1" role="tab"><span>LUN</span><strong>—</strong></button>
+          <button class="day-tab" type="button" data-day="2" role="tab"><span>MAR</span><strong>—</strong></button>
+          <button class="day-tab" type="button" data-day="3" role="tab"><span>MER</span><strong>—</strong></button>
+          <button class="day-tab" type="button" data-day="4" role="tab"><span>JEU</span><strong>—</strong></button>
+          <button class="day-tab" type="button" data-day="5" role="tab"><span>VEN</span><strong>—</strong></button>
+        </div>
+        <div class="schedule-list" id="schedule-list" aria-live="polite"></div>
+        <p class="sample-note">Exemple d’emploi du temps — pensez à remplacer ces informations par celles de votre établissement.</p>
+      </section>
+
+      <section class="bottom-grid">
+        <a class="feature-card archive-feature" href="archives.html">
+          <div class="feature-copy"><span class="feature-kicker">TOUT SOUS LA MAIN</span><h2>Besoin d’un<br>document ?</h2><p>Retrouvez vos cours et ressources dans l’archivage.</p><span class="text-link">Explorer les archives <b>↗</b></span></div>
+          <div class="feature-art" aria-hidden="true"><div class="art-paper paper-back"></div><div class="art-paper paper-front"><i></i><i></i><i></i></div><div class="art-star">✳</div></div>
+        </a>
+        <div class="tip-card"><div class="tip-icon">✦</div><div><span class="feature-kicker">PETIT RAPPEL</span><h2>Prêt·e pour la suite ?</h2><p>Gardez cette page en favori pour retrouver votre planning en un clic.</p></div></div>
+      </section>
+      <footer class="main-footer"><span>Fait pour vous aider à y voir plus clair.</span><a href="archives.html">Accéder aux archives <span>→</span></a></footer>
+    </main>
+  </div>
+</body>
+</html>
